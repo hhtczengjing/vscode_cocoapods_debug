@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug CocoaPods with Bundler",
+            "showDebuggerOutput": true,
+            "type": "Ruby",
+            "request": "launch",
+            "useBundler": true,
+            "cwd": "${workspaceRoot}/Demo",
+            "program": "${workspaceRoot}/cocoapods/bin/pod",
+            "args": [
+                "install",
+                "--verbose"
+            ],
+            "env": {
+                "PATH": "${userHome}/.rvm/gems/ruby-3.0.0/bin:${userHome}/.rvm/gems/ruby-3.0.0@global/bin:${userHome}/.rvm/rubies/ruby-3.0.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:${userHome}/.rvm/bin:${userHome}/.rvm/bin",
+                "GEM_HOME": "${userHome}/.rvm/gems/ruby-3.0.0",
+                "GEM_PATH": "${userHome}/.rvm/gems/ruby-3.0.0:${userHome}/.rvm/gems/ruby-3.0.0@global",
+                "RUBY_VERSION": "ruby-3.0.0",
+                "LANG": "en_US.UTF-8",
+                "LANGUAGE": "en_US.UTF-8",
+                "LC_ALL": "en_US.UTF-8"
+            }
+        }
+    ]
+}
